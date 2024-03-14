@@ -338,6 +338,16 @@ main {
         display: none;
     }
 
+    .dropdown:hover #dropdown-button {
+        background-color: rgb(52, 128, 111);
+        animation-name: none;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        animation-name: none;
+        display: none;
+    }
+
     main {
         width: 100%;
         margin: 0;
@@ -389,6 +399,7 @@ main {
     }
     
     .right-img {
+        overflow: hidden;
         border-radius: 7px;
     }
     
