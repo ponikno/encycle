@@ -37,6 +37,18 @@ header p {
     justify-content: center;
 }
 
+.mobile-menu-toggle {
+    display: none;
+}
+
+.main-menu {
+    background-color: rgb(52, 128, 111);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .navigation-inside {
     text-align: center;
     max-width: 90%;
@@ -154,7 +166,6 @@ main {
 .background-container {
     padding: 1px;
     overflow: hidden;
-    height: auto;
     background-color: rgb(250, 231, 209);
 }
 
@@ -271,11 +282,40 @@ main {
     }
 
     .main-navigation {
-        background-color: rgb(52, 128, 111);
+        background-color: rgb(48, 105, 93);
         width: 100%;
         display: block;
         align-items: center;
         justify-content: center;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+        max-width: 100%;
+        padding: 15px;
+        margin: 0;
+        text-align: center;
+        font-family: Lora;
+        color: white;
+    }
+
+    .mobile-dropdown-toggle {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none'%3E%3Cpath d='M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z'/%3E%3Cpath fill='%23000' d='M20 17.5a1.5 1.5 0 0 1 .144 2.993L20 20.5H4a1.5 1.5 0 0 1-.144-2.993L4 17.5zm0-7a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 0 1 0-3zm0-7a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 1 1 0-3z'/%3E%3C/g%3E%3C/svg%3E");
+        background-color: currentColor;
+        -webkit-mask-image: var(--svg);
+        mask-image: var(--svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
+        vertical-align: -3px;
+      }
+
+    .main-menu {
+        display: none;
     }
     
     .navigation-inside {
@@ -429,4 +469,5 @@ main {
         height: 200px;
         width: 100%
     }
+
 }
